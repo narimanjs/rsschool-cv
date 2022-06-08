@@ -17,19 +17,19 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="#about_me" class="menu__item-link">about me</a>
+                  <a href="#about_me" class="nav__item-link">about me</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#code_example" class="menu__item-link">code example</a>
+                  <a href="#code_example" class="nav__item-link">code example</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#skills" class="menu__item-link">skills</a>
+                  <a href="#skills" class="nav__item-link">skills</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#language" class="menu__item-link">language</a>
+                  <a href="#language" class="nav__item-link">language</a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#contacts" class="menu__item-link">contacts</a>
+                  <a href="#contacts" class="nav__item-link">contacts</a>
                 </li>
               </ul>
             </nav>
@@ -38,48 +38,71 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="main__info">
-          <h1 class="main__title">Nariman Mirmanov</h1>
-          <h2 class="main__subtitle">future webdev</h2>
-          <img src="assets/img/avatar.jpg" alt="avatar">
-        </section>
-        <section id="about_me" class="section__item">
-          <h3 class="section_title">about me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            officiis quo, voluptate commodi omnis vel molestiae ipsa voluptatem
-            temporibus placeat, quidem cum aperiam, ducimus a tempora pariatur nam
-            recusandae illo.</p>
-        </section>
-        <section id="code_example" class="section__item">
-          <h3 class="section_title">code example</h3>
-          <div class="code_exam">
-            <pre>
-              funtion sum(a, b) {
-                return a + b; } 
-              let res = sum(1, 0);
-              console.log(res);
-            </pre>
-          </div>
-        </section>
-        <section id="skills" class="section__item">
-          <h3 class="section_title">skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-          </ul>
-        </section>
-        <section id="languge" class="section__item">
-          <h3 class="section_title">language</h3>
-          <ul>
-            <li>Russian - native</li>
-            <li>Kazakh - native</li>
-            <li>English - A2</li>
-          </ul>
-        </section>
-        <section id="contacts" class="section__item">
-          <h3 class="section_title">contacts</h3>
-        </section>
+        <div class="main__container">
+          <section class="section__profile" id="profile">
+            <img src="assets/img/avatar.jpg" alt="avatar" class="section__profile-logo">
+            <div class="sertion__profile-title">
+              <h1 class="section__title main__title">Nariman Mirmanov</h1>
+              <h3 class="section__subtitle">future webdev</h3>
+            </div>            
+          </section>
+          <section id="contacts" class="section">
+            <h2 class="section__title">contacts</h2>
+            <ul class="section-list">
+              <li class="section-item contacts-item">
+                Ryazan, russia
+              </li>
+              <li class="section-item contacts-item">
+                <a href="mailto:mirmanov1@mail.ru" title="email">mirmanov1@mail.ru</a>
+              </li>
+              <li class="section-item contacts-item">
+                <a href="https://github.com/narcash" title="github">narcash</a>
+              </li>
+              <li class="section-item contacts-item">
+                <a href="https://t.me/narcash" title="telegram">@narcash</a>
+              </li>
+              <li class="section-item contacts-item">
+                <a href="https://discord." title="discord">narcash#</a>
+              </li>
+            </ul>
+
+          </section>
+          <section id="summary" class="section">
+            <h3 class="section__title">summary</h3>
+            <p>Hi, my name is Nariman. I like programming. I have a main job, programming is a hobby for me. My goal is to learn a pure JavaScript at a good level and learn the React library.
+              <br> Слава Україні! Жыве Беларусь!       
+            </p>
+          </section>
+          <section id="skills" class="section">
+            <h3 class="section__title">skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </section>
+          <section id="code_example" class="section">
+            <h3 class="section__title">code example</h3>
+              <pre class="pre">
+                <code>
+                  funtion sum(a, b) {
+                    return a + b; } 
+                  let res = sum(1, 0);
+                  console.log(res);
+                </code>
+              </pre>
+          </section>
+          
+          <section id="language" class="section">
+            <h3 class="section__title">language</h3>
+            <ul>
+              <li>Russian - native</li>
+              <li>Kazakh - native</li>
+              <li>English - A2</li>
+            </ul>
+          </section>
+          
+        </div>
       </div>
     </main>
     <footer>
