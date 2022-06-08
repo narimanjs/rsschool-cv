@@ -8,6 +8,10 @@ html {
 .main,
 .footer {
   border: 1px solid red;
+  align-items: center;
+}
+h3 {
+  padding-left: 25px;
 }
 body {
   display: flex;
@@ -25,19 +29,28 @@ body {
   align-items: center;
   list-style: none;
 }
-.header__title {
+.main__title {
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #829985;
 }
-.header__subtitle {
+.main__subtitle {
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #829985;
+}
+.main__info {
+  display: flex;
+  align-items: start;
+}
+.main__info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .menu__item-link {
   padding: 0 20px;
@@ -59,7 +72,7 @@ body {
 .section {
   width: 50%;
 }
-.code_exam {
+.code_exam pre {
   background-color: rgb(190, 183, 183);
   width: 450px;
   height: 150px;
