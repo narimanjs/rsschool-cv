@@ -25,6 +25,11 @@ body {
   align-items: center;
   list-style: none;
 }
+.header__info {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 .header__title {
   font-size: 24px;
   font-weight: 400;
@@ -38,6 +43,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #829985;
+}
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .menu__item-link {
   padding: 0 20px;
