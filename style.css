@@ -4,12 +4,12 @@
 html {
   scroll-behavior: smooth;
 }
-.header,
+/* .header,
 .main,
 .footer {
   border: 1px solid red;
   align-items: center;
-}
+} */
 h3 {
   padding-left: 25px;
 }
@@ -34,11 +34,10 @@ body {
     padding: 0 20px;
   }
 }
-nav {
-  display: block;
-}
+
+/* end header */
 .header {
-  background-color: #4f6265;
+  background-color: #829985;
 }
 .header__nav-list {
   display: flex;
@@ -46,42 +45,36 @@ nav {
   align-items: center;
   list-style: none;
 }
-
 .nav__item-link {
   position: relative;
   padding: 0 12px;
   text-decoration: none;
-  font-size: 23px;
-  font-weight: 300;
-  line-height: 50px;
+  font-size: 18px;
+  font-weight:400;
+  line-height: 30px;
   color: #fff;
 }
 .nav__item-link:hover {
-  text-decoration: none;
+  text-decoration: underline;
   transition: 0.8s;
   color: #4d2323;
+  text-transform: uppercase;
+  text-shadow: red -2px 0,
+               cyan 2px 0;
 }
+.header__nav {
+  display: block;
+}
+/* end header */
 
+
+/* start main */
 .main__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.main__title {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #829985;
-}
-.main__subtitle {
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #829985;
-}
 .section__profile {
   display: flex;
   justify-content: space-around;
@@ -89,15 +82,20 @@ nav {
   padding: 50px 30px 35px;
   border-bottom: 15px solid #d7d1c9;
 }
-.section__profile-logo {width: 200px;
+.section__profile-logo {
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 60%);
   filter: grayscale(0.2) brightness(1.05);
-  transition: .3s;
-  opacity: .8;
-  
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.section__profile-logo:hover {
+  width: 300px;
+  height: 300px;
+  transition: 0.6s;
 }
 .section {
   width: calc(50% - 20px);
@@ -113,20 +111,39 @@ nav {
   letter-spacing: 5px;
   color: #829985;
 }
+.section__subtitle {
+  text-shadow: red -2px 0,
+               cyan 2px 0;
+}
 .section-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.pre code {
+.contacts-item a {
+  text-decoration: none;
+  color: #829985;
+}
+.contacts-svg {
+  display: inline-block;
+  width: 28px;
+  height: 15px;
+}
+section .pre {
   padding: 0;
   margin: 0;
   right: 0;
+  color: rgb(255, 255, 86);
+  background-color: #4494ea;
 }
 .code {
   margin: 0 auto;
   left: 25px;
 }
+/* end main */
+
+
+/* start footer */
 .footer {
   background-color: #829985;
   padding: 20px;
@@ -138,4 +155,27 @@ nav {
   margin: 0 auto;
   color: #fff;
 }
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+.github {
+  color: #fff;
+  text-decoration: none;
+  line-height: 45px;
+}
+.rss {
+  width: 120px;
+  height: 50px;
+  background-image: url(assets/svg/rss.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.rss-text {
+  display: none;
+}
+/* end footer */
 
