@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icons/fav.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
     <title>cv</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header__container">
-          <div class="header__photo"></div>
-          <div class="header__content">
-            <nav class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">
-                  <a href="#about_me">about me</a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#summary" class="nav__item-link">summary</a>
                 </li>
-                <li class="header__menu-item">
-                  <a href="#code_example">code example</a>
+                <li class="header__nav-item">
+                  <a href="#code_example" class="nav__item-link">code example</a>
                 </li>
-                <li class="header__menu-item">
-                  <a href="#skills">skills</a>
+                <li class="header__nav-item">
+                  <a href="#skills" class="nav__item-link">skills</a>
                 </li>
-                <li class="header__menu-item">
-                  <a href="#language">language</a>
+                <li class="header__nav-item">
+                  <a href="#education" class="nav__item-link">education</a>
                 </li>
-                <li class="header__menu-item">
-                  <a href="#contacts">contacts</a>
+                <li class="header__nav-item">
+                  <a href="#language" class="nav__item-link">language</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#contacts" class="nav__item-link">contacts</a>
                 </li>
               </ul>
             </nav>
-          </div>
-          <div class="header__info">
-            <h1 class="header__title">Nariman Mirmanov</h1>
-            <h2 class="header__subtitle">future webdev</h2>
-          </div>
         </div>
       </div>
     </header>
-    <div class="main__content">
+    <main class="main">
       <div class="container">
-        <section id="about_me">
-          <h3>about me</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          officiis quo, voluptate commodi omnis vel molestiae ipsa voluptatem
-          temporibus placeat, quidem cum aperiam, ducimus a tempora pariatur nam
-          recusandae illo.
-        </section>
-        <section id="code_example">
-          <h3>code example</h3>
-          <code>
-            funtion sum(a, b) { return a + b; } let res = sum(1, 0);
-            console.log(res);
-          </code>
-        </section>
-        <section id="skills">
-          <h3>skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-          </ul>
-        </section>
-        <section id="languge">
-          <h3>language</h3>
-          <ul>
-            <li>Russian - native</li>
-            <li>Kazakh - native</li>
-            <li>English - A2</li>
-          </ul>
-        </section>
-        <section id="contacts">
-          <h3>contacts</h3>
-        </section>
+        <div class="main__container">
+          <section class="section__profile" id="profile">
+            <img src="assets/img/avatar.jpg" alt="avatar" class="section__profile-logo">
+            <div class="sertion__profile-title">
+              <h1 class="section__title main__title">Nariman Mirmanov</h1>
+              <h3 class="section__subtitle">future webdev</h3>
+            </div>            
+          </section>
+          <section id="contacts" class="section">
+            <h2 class="section__title">contacts</h2>
+            <ul class="section-list">
+              <li class="section-item contacts-item">
+                <img class="contacts-svg" src="assets/svg/location.svg" alt="location">
+                <span>Ryazan, russia</span>
+              </li>
+              <li class="section-item contacts-item">
+                <img class="contacts-svg" src="assets/svg/email.svg" alt="email">
+                <span>Email: </span>
+                <a href="mailto:mirmanov1@mail.ru" title="email">mirmanov1@mail.ru</a>
+              </li>
+              <li class="section-item contacts-item">
+                <img class="contacts-svg" src="assets/svg/github.svg" alt="github">
+                <span>github: </span>
+                <a href="https://github.com/narcash" title="github">narcash</a>
+              </li>
+              <li class="section-item contacts-item">
+                <img class="contacts-svg" src="assets/svg/telegram.svg" alt="telegram">
+                <span>tg: </span>
+                <a href="https://t.me/narcash" title="telegram">@narcash</a>
+              </li>
+              <li class="section-item contacts-item">
+                <img class="contacts-svg" src="assets/svg/discord.svg" alt="discord">
+                <span>discord: </span>
+                <a href="https://discord." title="discord">narcash#3411</a>
+              </li>
+            </ul>
+          </section>
+          <section id="summary" class="section">
+            <h3 class="section__title">summary</h3>
+            <p>Hi, my name is Nariman. I like programming. I have a main job, programming is a hobby for me. My goal is to learn a pure JavaScript at a good level and learn the React library.
+              <br> Слава Україні! Жыве Беларусь!       
+            </p>
+          </section>
+          <section id="skills" class="section">
+            <h3 class="section__title">skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </section>
+          <section id="education" class="section">
+            <h3 class="section__title">education</h3>
+            <ul>
+              <li>Ryazan State Agrotechnological
+                University
+                <br>
+                Named after P.A. Kostychev</li>
+            </ul>
+          </section>
+          <section id="language" class="section">
+            <h3 class="section__title">language</h3>
+            <ul class="section-list">
+              <li>Russian - native</li>
+              <li>Kazakh - native</li>
+              <li>English - A2</li>
+            </ul>
+          </section>
+          <section id="code_example" class="section">
+            <h3 class="section__title">code example</h3>
+              <pre class="pre">
+                <code>
+      funtion sum(a, b) {
+        return a + b; } 
+      let res = sum(1, 0);
+      console.log(res);
+              </code>
+              </div>
+              </pre>
+          </section>
+        </div>
       </div>
-    </div>
-    <footer>
-      <div class="container"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div>
+          © 2022
+          <a href="https://github.com/narcash" class="github nav-link">narcash</a>
+        </div>
+        <a href="https://rs.school/js/" class="rss"><span class="rss-text">rss</span></a>
+      </div>
     </footer>
   </body>
 </html>
